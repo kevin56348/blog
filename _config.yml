@@ -113,8 +113,7 @@ analytics:
 author:
   name: "Kevin Wong"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Such place Eternal Justice has prepared 
-  For those rebellious."
+  bio: "Such place Eternal Justice has prepared For those rebellious;"
   location: "Beijing"
   email:
   links:
@@ -126,16 +125,16 @@ author:
       url: "https://kevin56348.github.io/blog/"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+    # url: "https://twitter.com/"
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+    # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/kevin56348/"
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    # url: "https://instagram.com/"
 
 # Site Footer
 footer:
@@ -145,7 +144,7 @@ footer:
     #   # url:
     # - label: "Facebook"
     #   icon: "fab fa-fw fa-facebook-square"
-      # url:
+    # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
@@ -154,10 +153,10 @@ footer:
       # url:
     # - label: "Bitbucket"
     #   icon: "fab fa-fw fa-bitbucket"
-      # url:
+    # url:
     # - label: "Instagram"
     #   icon: "fab fa-fw fa-instagram"
-      # url:
+    # url:
 
 # Reading Files
 include:
