@@ -41,19 +41,18 @@ header:
 又是一年新年，回家之后非常自由自在。吃饭，睡觉，穿插着写代码。于是我的第一版带cache的CPU就这样完成了。我叫他Hades，
 也许是受尽了cache的折磨，或者是受尽了CPU的折磨，所以叫他这个名字。
 
-We named it "Hades", the god of the underworld
-For a long period, it has been experienced, unmoved by prayer or sacrifice.
-In such an unseen depth, freezing, dark and empty,
-there are few persons, individuals, mortals,
-who could not feel despair.
-Like a forbidden area - one great Furnace flam'd,
-yet from those flames no light, but rather darkness
-visible serv'd only to discover sights of woe,
-regions of sorrow, doleful shades, where peace and rest
-can never dwell, with ever-burning Sulphur unconsum'd,
-we stepped into and fought with, whereas failure
-takes the throne, where divine light will never spread.
-{: .notice--info}
+> We named it "Hades", the god of the underworld
+> For a long period, it has been experienced, unmoved by prayer or sacrifice.
+> In such an unseen depth, freezing, dark and empty,
+> there are few persons, individuals, mortals,
+> who could not feel despair.
+> Like a forbidden area - one great Furnace flam'd,
+> yet from those flames no light, but rather darkness
+> visible serv'd only to discover sights of woe,
+> regions of sorrow, doleful shades, where peace and rest
+> can never dwell, with ever-burning Sulphur unconsum'd,
+> we stepped into and fought with, whereas failure
+> takes the throne, where divine light will never spread.
 
 又过了一个学期，又是缝缝补补的一个学期，害怕做一些实质性的更改，不敢去做，不敢去想，只想做一些机械性的工作，
 完善现在的项目，整理现在的项目，但是显然没能成功。各种事让我无法思考，编码工作也就随之停滞了。
