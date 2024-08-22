@@ -8,7 +8,7 @@ toc_label: "目录"
 toc_icon: "th-list"
 classes: wide
 header:
-  image: /assets/images/20240818_龙芯杯_王雨辰_24.jpg
+  image: /assets/images/20240818_龙芯杯_26.jpg
   caption: "NSCSCC24. **2024年8月，重庆**"
 ---
 
