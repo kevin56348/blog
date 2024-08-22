@@ -2,7 +2,10 @@
 title: 2024 "龙芯杯"
 layout: single
 permalink: /nscscc
-last_modified_at: 2024.8.21
+last_modified_at: 2024.8.22
+toc: true
+toc_label: "目录"
+toc_icon: "th-list"
 ---
 
 ## 前言
@@ -27,12 +30,49 @@ last_modified_at: 2024.8.21
 我们认为这个除法器一定会给我们带来巨大的收益，但当我们发现每一次访存，无论是取指令还是取数据，都会被加上25周期的延时后，
 除法运算省下来的时间可以说是九牛一毛。这对于我们初赛的性能测试几乎没有任何帮助，除了可以在报告中写上一笔。
 
-过了这个假期，我决定痛定思痛，从主要矛盾入手，提升性能。
+过了这个假期，我决定从主要矛盾入手，提升性能。
 于是，一个dcache，我写了几周。当想要做一些自己的事时，总是被各种杂事缠身，当然，也可能是我对这个事情很害怕，试图用各种事情
 掩盖过去，直到一个不能再拖的时候，才会开始动手。
 
-...
+又是一年新年，回家之后非常自由自在。吃饭，睡觉，穿插着写代码。于是我的第一版带cache的CPU就这样完成了。我叫他Hades，
+也许是受尽了cache的折磨，或者是受尽了CPU的折磨，所以叫他这个名字。
+
+> We named it "Hades", the god of the underworld
+> For a long period, it has been experienced, unmoved by prayer or sacrifice.
+> In such an unseen depth, freezing, dark and empty,
+> there are few persons, individuals, mortals,
+> who could not feel despair.
+> Like a forbidden area - one great Furnace flam'd,
+> yet from those flames no light, but rather darkness
+> visible serv'd only to discover sights of woe,
+> regions of sorrow, doleful shades, where peace and rest
+> can never dwell, with ever-burning Sulphur unconsum'd,
+> we stepped into and fought with, whereas failure
+> takes the throne, where divine light will never spread.
+
+又过了一个学期，又是缝缝补补的一个学期，害怕做一些实质性的更改，不敢去做，不敢去想，只想做一些机械性的工作，
+完善现在的项目，整理现在的项目，但是显然没能成功。各种事让我无法思考，编码工作也就随之停滞了。
+
+拖延症拖到最后总要付出一些代价，不是身体上的折磨就是心灵上的折磨，或者两者兼有。
+临近比赛截止日期，也就是六月下旬，我们正式开始了这次的备赛工作。
+这个去年的时间差不多，但区别是我们已经有了一个自行设计的，完整的CPU核，还有tlb、cache等模块，也有了丰富的设计经验，
+去年只是空有一颗参赛的决心而已。显然，决心没有用，也不要想能够抄一份代码。在CPU核的极高耦合度下，没什么东西是开箱即用的；
+经验才有用，可能一个bug需要没有经验的人找一个星期，有经验的人一眼就能看出来。
+
+> 该踩的坑，一个不少，该走的路，一米不差
+
+临近提交的很短时间内，我们完成了超标量的设计，这个设计并没有我们想象的那么难。为了提升频率将跳转单元挪来挪去，改来改去。
+最后算是交上了一个还算满意的版本。也算是给这么长时间的努力一个交代。
+
+进了决赛，去了重庆，答辩过后依旧兴奋，直到第二天的颁奖典礼过后才冷静下来。拿了二等奖，也算是破了学校记录，还是非常心满意足的。
+比赛一年比一年难，从最开始的完成即完赛，到现在标配cache，不敢想象过两年是不是要标配双发射了。不过我能做的，就是把参赛的CPU写好注释，写好文档，让他可以传承下去，让更多人能够学会设计CPU，调试CPU，就足够了。
+
+![颁奖典礼](../assets/images/20240818_龙芯杯_王雨辰_24.jpg)
 
 2024年8月
 
-重庆
+学院路
+
+## CPU设计
+
+...
