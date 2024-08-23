@@ -1,7 +1,7 @@
 ---
 title: Kevin's Home
 layout: single
-permalink: /home
+permalink: /home/
 last_modified_at: 2024.8.21
 ---
 

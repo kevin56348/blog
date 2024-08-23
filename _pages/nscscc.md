@@ -1,7 +1,7 @@
 ---
 title: 2024 "龙芯杯"
 layout: single
-permalink: /nscscc
+permalink: /nscscc/
 last_modified_at: 2024.8.22
 toc: true
 toc_label: "目录"

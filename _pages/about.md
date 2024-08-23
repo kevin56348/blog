@@ -1,7 +1,7 @@
 ---
 title: 关于我
 layout: single
-permalink: /about
+permalink: /about/
 last_modified_at: 2024.6.13
 ---
 
