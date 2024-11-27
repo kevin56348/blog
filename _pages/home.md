@@ -7,4 +7,4 @@ last_modified_at: 2024.8.21
 
 你好！我所有的pages都会放到这里，欢迎阅读！
 
-[NSCSCC24](nscscc)
+[NSCSCC24](/blog/nscscc/)
