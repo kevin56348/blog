@@ -76,7 +76,7 @@ CPU 从复杂程度来看，可以简单分为单周期、流水线、超标量�
 
 现在，我们可以画出一个 CPU 的顶层模块设计图：
 
-![top structure](/blog/assets/images/20241128_NSCSCC_top_structure_1.jpg)
+![top structure](/blog/assets/images/20241128_NSCSCC_top_structure_1.png)
 
 其中，Inst RAM 是负责存放所有指令的随机存储器，Data RAM 是负责存放数据的随机存储器。在 CPU Core 中，Instruction Fetch（IF）是取指模块、Instruction Decode（ID）是译码模块、Execute（EXE）是执行模块，Reg File（RF）是寄存器堆。
 
