@@ -86,21 +86,82 @@ Inst RAM 与 CPU Core 之间通过 RAM I/F（RAM Interface，即 RAM 接口）�
 
 #### 取指模块
 
-取值模块负责取出程序计数器（PC）中的地址，送到存储器中，并从存储器中取回该地址所对应的指令。在每次取值后，若没有跳转指令正在执行，PC 的值将会自增一个指令长度（具体自增的值取决于指令集和外设的寻址单位，例如一个拥有 32 位定长指令的指令集，存储器按字节寻址，PC 的值一般会自增 4），从而实现顺序取值。
+![if module structure](/blog/assets/images/20241213_NSCSCC_if_structure_1.png)
+
+取值模块负责取出程序计数器（PC）中的值 `PC`，作为地址 `addr` 送到存储器中，并从存储器中取回地址 `addr` 所对应的指令 `inst`。如果把以上的过程写成伪代码，将会是这样：
+
+```c
+extern uint32_t RAM[1024];
+uint32_t inst;
+
+inst = RAM[PC];
+```
+
+在每次取值后，若没有跳转指令正在执行（即 `is branch` 为 1），PC 的值将会自增一个指令长度（具体自增的值取决于指令集和外设的寻址单位，例如一个拥有 32 位定长指令的指令集，存储器按字节寻址，PC 的值一般会自增 4），从而实现顺序取值，否则 PC 会被置为 `br addr` 的值，从而完成“跳转”。如果把以上的过程写成伪代码，将会是这样：
+
+```c
+extern bool is_branch;
+extern uint32_t br_addr;
+uint32_t PC;
+
+if(is_branch){
+    PC = br_addr;
+}else{
+    PC++;
+}
+```
 
 #### 译码模块
 
-译码模块负责将取值模块取出来的地址进行解释，并“指导”执行模块需要做什么。
+![id module structure](/blog/assets/images/20241213_NSCSCC_id_structure_1.png)
 
-todo
+译码模块负责将取值模块取出来的地址进行解释，并“指导”执行模块需要做什么。我们已经在上文中看到了信号 `is_branch` 和 `br_addr`，这两个信号就是在这里生成的，用来指导取指模块 PC 的更新。除了这两个信号，译码模块还会生成大量用于控制执行模块计算的信号，如译码模块加法指令就会产生两个操作数、一个计算类型和一个寄存器写地址（如果该指令不需要写寄存器，则将写地址直接置为 **只读寄存器 0**）：
+
+```c
+extern uint32_t inst;
+extern uint32_t regfile[32];
+uint8_t dst;
+uint32_t src1;
+uint32_t src2;
+OP_TYPE op;
+
+if(is_addw(inst)){
+    op = ADDW;
+    src1 = get_src1(inst, regfile);
+    src2 = get_src2(inst, regfile);
+    dst = get_dst(inst);
+}else{
+    //...
+}
+```
 
 #### 执行模块
 
-执行模块接受译码模块的指导，执行取回的指令。
+![exe module structure](/blog/assets/images/20241213_NSCSCC_exe_structure_1.png)
 
-todo
+执行模块接受译码模块的指导，执行取回的指令。继续以加法为例，执行模块会根据译码模块产生的计算类型确定需要对两个操作数进行何种计算（如加、减、乘、除等），并且在我们的 CPU 中，执行模块负责根据传来的寄存器写地址更新寄存器堆。
 
-### 流水线 CPU 设计
+```c
+extern OP_TYPE op;
+extern uint32_t src1;
+extern uint32_t src2;
+extern uint8_t dst;
+extern uint32_t regfile[32];
+uint32t result;
+
+switch(op){
+    case ADDW: 
+        result = signed_add(src1, src2);
+        break;
+    // ...
+    default:
+        break;
+}
+
+write_reg(regfile, dst, result);
+```
+
+<!-- ### 流水线 CPU 设计
 
 todo
 
@@ -114,4 +175,4 @@ todo
 
 ### 超标量 CPU 设计
 
-todo
+todo -->
