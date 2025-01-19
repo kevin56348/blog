@@ -19,7 +19,7 @@ last_modified_at: 2024.6.13
 
 ![alt text](../assets/images/20210900_宣教组_1.jpg)
 
-![alt text](../assets/images/20220807_社会实践_6.PNG)
+![alt text](../assets/images/20220807_社会实践_6.jpg)
 
 这一年我的成绩还算说得过去，但总觉得少了点什么，也许是调剂给我带来的感觉：我不够好，没能进到自己想去的专业，入学时那惨淡的分数也在提醒我这点。
 
