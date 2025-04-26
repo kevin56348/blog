@@ -20,4 +20,4 @@ Soulter. (2025). Soulter. <https://soulter.top/>
 Wdlin. (2025). wdlin's Blog. <https://wdlin233.github.io/>  
 YOO_koishi. (2025). YOO_koisho's home. <http://www.yookoishi.com/>
 
-> Follow the APA 7th edition referencing system.
+> Following the APA 7th edition referencing system.
