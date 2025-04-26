@@ -2,7 +2,7 @@
 title: Kevin's Friends
 layout: single
 permalink: /friends/
-last_modified_at: 2024.12.11
+last_modified_at: 2025.4.26
 ---
 
 ## Here are my friends
