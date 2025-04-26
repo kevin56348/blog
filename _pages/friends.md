@@ -16,6 +16,7 @@ Qodicat. (2025). Qodicat. <https://qodicat.top/>
 Reina. (2025). si_niam - 博客园. <https://cnblogs.com/si--nian>  
 SoloMaple. (2025). SoloMaple's Home. <https://solomaple.github.io/>  
 Soulter. (2025). Soulter. <https://soulter.top/>  
+Wdlin. (2025). wdlin's Blog. <https://wdlin233.github.io/>  
 YOO_koishi. (2025). YOO_koisho's home. <http://www.yookoishi.com/>
 
 > Follow the APA 7th edition referencing system.
