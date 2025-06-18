@@ -43,21 +43,21 @@ last_modified_at: 2024.6.13
 
 本科的最后一年，比前三年过得都快。这一年以学位论文的致谢收尾。也祝贺我拿到了工学与文学两个学士学位。
 
-    七月流火，初探燕都故郡；五月鸣蜩，终辞钢苑新庠。
-
-    从大一起，我不曾缺席每一次开学与毕业典礼。从秋到夏，我见到了雁栖湖的金色落日、康坡村的恋恋不舍、不可避免的离别、石舫上的自在悠闲，和不老屯夜空中飞翔的流星。
-
-    希望我能有“花开堪折直须折，莫待无花空折枝”的果断，有“亦余心之所向兮，虽九死其尤未悔”的决心。也许果断，就不会有“人生不相见，动如参与商”的悲伤，也许下定决心，就能发现“云销雨霁，彩彻区明”。
-
-    雨果笔下芒熛四射的光明透过爱伦坡的彩虹长廊，照在了黑檀木钟上。一些人期盼着那悠悠尽头的微光，一些人在红死病中寻欢作乐。弥尔顿笔下史诗般的乐园，和但丁笔下的三部神曲，让我们看到了人性。萨克雷在约翰班杨的天路历程中看到了世间万物皆名利。向天空进发的达芬奇也一定想要飞跃佛罗伦萨的切切里山。余华笔下的许三观和福贵，让我们看炎凉世态。语言的魅力是无穷的：一种语言的背后可能承载着一种文化，一段文字的背后可能承载着一个人的一生。
-
-    The decision to double major was a difficult one, especially right after switching from one major to another. However, being a double major student has taught me a lot. I've seen that underneath every language there is a culture---a combination of history, spirit, and people, not just a tool.
-
-    Après avoir terminé mon projet de fin d'études à l'université des Sciences et des Technologies de Pékin, j'entamerai un nouveau voyage à l'université de l'Aéronautique et de l'Aérospatiale de Pékin.
-
-    “惟学无际天地贯，崇实求是创新天。”
-
-    二〇二五年六月
-    学院路，勤敏轩
+>七月流火，初探燕都故郡；五月鸣蜩，终辞钢苑新庠。
+>
+>从大一起，我不曾缺席每一次开学与毕业典礼。从秋到夏，我见到了雁栖湖的金色落日、康坡村的恋恋不舍、不可避免的离别、石舫上的自在悠闲，>和不老屯夜空中飞翔的流星。
+>
+>希望我能有“花开堪折直须折，莫待无花空折枝”的果断，有“亦余心之所向兮，虽九死其尤未悔”的决心。也许果断，就不会有“人生不相见，动如参>与商”的悲伤，也许下定决心，就能发现“云销雨霁，彩彻区明”。
+>
+>雨果笔下芒熛四射的光明透过爱伦坡的彩虹长廊，照在了黑檀木钟上。一些人期盼着那悠悠尽头的微光，一些人在红死病中寻欢作乐。弥尔顿笔下史>诗般的乐园，和但丁笔下的三部神曲，让我们看到了人性。萨克雷在约翰班杨的天路历程中看到了世间万物皆名利。向天空进发的达芬奇也一定想要>飞跃佛罗伦萨的切切里山。余华笔下的许三观和福贵，让我们看炎凉世态。语言的魅力是无穷的：一种语言的背后可能承载着一种文化，一段文字的>背后可能承载着一个人的一生。
+>
+>The decision to double major was a difficult one, especially right after switching from one major to >another. However, being a double major student has taught me a lot. I've seen that underneath every >language there is a culture---a combination of history, spirit, and people, not just a tool.
+>
+>Après avoir terminé mon projet de fin d'études à l'université des Sciences et des Technologies de Pékin, >j'entamerai un nouveau voyage à l'université de l'Aéronautique et de l'Aérospatiale de Pékin.
+>
+>“惟学无际天地贯，崇实求是创新天。”
+>
+>二〇二五年六月
+>学院路，勤敏轩
 
 ---
