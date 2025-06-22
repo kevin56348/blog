@@ -62,6 +62,6 @@ last_modified_at: 2024.6.13
 
 就让这一段旅程以两张毕业证和一张学位证结束吧。
 
-<p class="justify_txt">勤于思  敏与行  苟日新  日日新</p>
+<p class="justify_txt">勤于思&emsp;&emsp;&emsp;敏与行&emsp;&emsp;&emsp;苟日新&emsp;&emsp;&emsp;日日新</p>
 
 ---
