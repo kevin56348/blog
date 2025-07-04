@@ -16,6 +16,20 @@
   {% assign image_description = page.title %}
 {% endif %}
 
+{% if page.header.images %}
+  {% capture imgs_relative_url %}{% for image in page.header.images %}{{ image | relative_url }},{% endfor %}{% endcapture %}
+{% endif %}
+
+{% if page.header.captions %}
+  {% capture captions_markdownify %}{% for caption in page.header.captions %}{{ caption | markdownify | remove: "<p>" | remove: "</p>" | strip_newlines }},{% endfor %}{% endcapture %}
+{% endif %}
+
+{% if page.header.descriptions %}
+  {% capture descriptions_markdownify %}{% for description in page.header.descriptions %}{{ description | markdownify | strip_html | strip_newlines | escape_once }},{% endfor %}{% endcapture %}
+{% else %}
+  {% capture descriptions_markdownify %}{% for fake_description in page.header.images %}{{ page.title | markdownify | strip_html | strip_newlines | escape_once }},{% endfor %}{% endcapture %}
+{% endif %}
+
 {% assign image_description = image_description | markdownify | strip_html | strip_newlines | escape_once %}
 
 <div class="page__hero{% if page.header.overlay_color or page.header.overlay_image %}--overlay{% endif %}"
@@ -45,9 +59,32 @@
       {% endif %}
     </div>
   {% else %}
-    <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image">
+    {% if page.header.images %}
+      <img src="<!--controlled by JavaScript-->" alt="<!--controlled by JavaScript-->" class="page__hero-image" id="rd_img_ctn">
+    {% else %}
+      <img src="{{ page.header.image | relative_url }}" alt="{{ image_description }}" class="page__hero-image">
+    {% endif %}
   {% endif %}
-  {% if page.header.caption %}
+  {% if page.header.captions %}
+    <span class="page__hero-caption" id="rd_cap_ctn"><!--controlled by JavaScript--></span>
+  {% elsif page.header.caption %}
     <span class="page__hero-caption">{{ page.header.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
   {% endif %}
 </div>
+
+<script>
+  function rdm(min = 0, max = 99) {
+    var rd = Math.floor(Math.random() * (max - min + 1)) + min;
+    rd = rd % "{{ page.header.images.size }}";
+    var imgs = "{{ imgs_relative_url }}".split(',');
+    var captions = "{{ captions_markdownify }}".split(',');
+    var descriptions = "{{ descriptions_markdownify }}".split(',');
+    var rd_img = imgs[rd];
+    var rd_caption = captions[rd];
+    var rd_description = descriptions[rd];
+    document.getElementById("rd_img_ctn").src = rd_img;
+    document.getElementById("rd_cap_ctn").innerHTML = rd_caption;
+    document.getElementById("rd_img_ctn").alt = rd_description;
+  }
+  rdm();
+</script>
