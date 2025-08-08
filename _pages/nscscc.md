@@ -2,7 +2,7 @@
 title: 2024 "龙芯杯"
 layout: single
 permalink: /nscscc/
-last_modified_at: 2024.11.1
+last_modified_at: 2025.8.8
 toc: true
 toc_label: "目录"
 toc_icon: "th-list"
@@ -76,7 +76,7 @@ CPU 从复杂程度来看，可以简单分为单周期、流水线、超标量�
 
 现在，我们可以画出一个 CPU 的顶层模块设计图：
 
-![top structure](/blog/assets/images/20241128_NSCSCC_top_structure_1.png)
+![top structure](/blog/assets/images/nscscc/nscscc_simple_core.webp)
 
 其中，Inst RAM 是负责存放所有指令的随机存储器，Data RAM 是负责存放数据的随机存储器。在 CPU Core 中，Instruction Fetch（IF）是取指模块、Instruction Decode（ID）是译码模块、Execute（EXE）是执行模块，Reg File（RF）是寄存器堆。
 
@@ -86,7 +86,7 @@ Inst RAM 与 CPU Core 之间通过 RAM I/F（RAM Interface，即 RAM 接口）�
 
 #### 取指模块
 
-![if module structure](/blog/assets/images/20241213_NSCSCC_if_structure_1.png)
+![if module structure](/blog/assets/images/nscscc/nscscc_simple_if.webp)
 
 取值模块负责取出程序计数器（PC）中的值 `PC`，作为地址 `addr` 送到存储器中，并从存储器中取回地址 `addr` 所对应的指令 `inst`。如果把以上的过程写成伪代码，将会是这样：
 
@@ -113,7 +113,7 @@ if(is_branch){
 
 #### 译码模块
 
-![id module structure](/blog/assets/images/20241213_NSCSCC_id_structure_1.png)
+![id module structure](/blog/assets/images/nscscc/nscscc_simple_id.webp)
 
 译码模块负责将取值模块取出来的地址进行解释，并“指导”执行模块需要做什么。我们已经在上文中看到了信号 `is_branch` 和 `br_addr`，这两个信号就是在这里生成的，用来指导取指模块 PC 的更新。除了这两个信号，译码模块还会生成大量用于控制执行模块计算的信号，如译码模块加法指令就会产生两个操作数、一个计算类型和一个寄存器写地址（如果该指令不需要写寄存器，则将写地址直接置为 **只读寄存器 0**）：
 
@@ -137,7 +137,7 @@ if(is_addw(inst)){
 
 #### 执行模块
 
-![exe module structure](/blog/assets/images/20241213_NSCSCC_exe_structure_1.png)
+![exe module structure](/blog/assets/images/nscscc/nscscc_simple_exe.webp)
 
 执行模块接受译码模块的指导，执行取回的指令。继续以加法为例，执行模块会根据译码模块产生的计算类型确定需要对两个操作数进行何种计算（如加、减、乘、除等），并且在我们的 CPU 中，执行模块负责根据传来的寄存器写地址更新寄存器堆。
 
@@ -171,13 +171,13 @@ $$\text{Performance} = 1/D$$
 
 其中 $$D$$ 为处理器的执行时间。
 
-![pipeline CPU](/blog/assets/images/20241215_NSCSCC_pipeline_1.png)
+![pipeline CPU](/blog/assets/images/nscscc/nscscc_pipeline_f1.webp)
 
 <!-- TODO: FIG -->
 
 单周期处理器的性能是执行时间 $$D$$ 的倒数，如果我们缩减执行时间，就可以获得更高的性能。对于一个拆分为 $$n$$ 级的处理器来说，理想情况下每一级的执行时间会是 $$D/n$$，考虑每一个之间寄存器的建立延迟为 $$S$$。现在，执行一条指令的时间为 $$n(D/n+S)$$，性能为 $$\text{Performance} = 1/n(D/n+S) = 1/(D+nS)$$，相较单周期处理器反而下降了。但当我们画出这个处理器执行指令时的“时空图”就会发现在一条指令的执行时间 $$n(D/n + S)$$ 内，每一级只会有 $$D/n+S$$ 的时间在执行指令，其余时间都是空闲的，这就造成了显著的浪费。如果我们将这些空闲时间有效利用起来，我们就能实现既定目标，获得更高的处理器性能。
 
-![pipeline CPU](/blog/assets/images/20241215_NSCSCC_pipeline_2.png)
+![pipeline CPU](/blog/assets/images/nscscc/nscscc_pipeline_f2.webp)
 
 假设我们每间隔 $$D/n+S$$ 便向处理器中输入一条指令，每一级部件都可以完成自己的工作，并按时送到两级部件之间的寄存器中，这样第一条指令的执行时间还保持 $$n(D/n+S)$$ 不变，但随后每隔 $$D/n+S$$ 便会有一条指令执行完毕。这个处理器的性能为
 
@@ -193,7 +193,7 @@ $$\begin{aligned}
 
 当 $$S$$ 足够小时，几乎是单周期处理器性能的 $$n$$ 倍。
 
-![pipeline CPU](/blog/assets/images/20241215_NSCSCC_pipeline_3.png)
+![pipeline CPU](/blog/assets/images/nscscc/nscscc_pipeline_f3.webp)
 
 ## References
 
