@@ -82,6 +82,17 @@ body {
   }
 }
 
+.page__subtitle {
+  margin-top: 0;
+  line-height: 0.8;
+  text-align: right;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;

@@ -34,6 +34,11 @@ layout: default
           <h1 id="page-title" class="page__title" itemprop="headline">
             <a href="{{ page.url | absolute_url }}" itemprop="url">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
           </h1>
+            {% if page.subtitle -%}
+            <h2 id="page-subtitle" class="page__subtitle" itemprop="headline">
+                <a>{{site.data.ui-text[site.locale].subtitle_leading_symbols}}{{ page.subtitle | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+            </h2>
+            {%- endif %}
           {%- endif %}
           {% include page__meta.html %}
         </header>
