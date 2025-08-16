@@ -6,9 +6,21 @@ main:
     url: /about
   - title: "Friends"
     url: /friends
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+nscscc:
+  - title: "概述"
+    url: /nscscc
+  - title: "单周期处理器"
+    url: /notdone
+  - title: "五级流水线处理器"
+    url: /notdone
+  - title: "高速缓存"
+    url: /notdone
+  - title: "分支预测器"
+    url: /notdone
+  - title: "多发射静态流水处理器"
+    url: /notdone
+  - title: "多发射动态流水处理器"
+    url: /notdone
+  - title: "后记"
+    url: /notdone
