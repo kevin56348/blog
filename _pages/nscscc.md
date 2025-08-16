@@ -1,12 +1,12 @@
 ---
 title: 2024 "龙芯杯"
+subtitle: "概述"
 layout: single
 permalink: /nscscc/
 last_modified_at: 2025.8.8
 toc: true
-toc_label: "目录"
-toc_icon: "th-list"
-classes: wide
+toc_sticky: true
+classes: single
 header:
   image: /assets/images/20240818_龙芯杯_26.jpg
   caption: "NSCSCC24. **2024年8月，重庆**"
@@ -14,6 +14,9 @@ categories:
   - doc
 tags:
   - cpu
+sidebar:
+  title: "NSCSCC related"
+  nav: nscscc
 ---
 
 ## 前言
@@ -78,8 +81,6 @@ CPU 从复杂程度来看，可以简单分为单周期、流水线、超标量�
 ### 图灵机
 
 为了更好地理解一个 CPU 需要做什么，我们将一个 CPU 以及与其交互的内存粗略地视为一个 **图灵机（Turing Machine）**。
-
-> 图灵机定义、表述与符号来自 Cui (2024).
 
 一个图灵机是一个七元组
 $$ M = (Q, \Sigma, \Gamma, \delta, q _{0}, B, F) $$
