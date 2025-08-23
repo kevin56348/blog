@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NOTICE TEXT BLOCKS
+   NOTICE TEXT BLOCKS / THEORY AND AXIOM BLOCKS
    ========================================================================== */
 
 /**
@@ -9,6 +9,11 @@
  *  Text for the notice
  *  </div>
  */
+
+$theorem-color: #4a8eff;
+$axiom-color: #ff6b4a;
+$theorem-background-mix: 90%;
+$axiom-background-mix: 90%;
 
 @mixin notice($notice-color) {
   margin: 2em 0 !important;  /* override*/
@@ -72,6 +77,35 @@
   }
 }
 
+@mixin theorem-box($type, $notice-color) {
+  @include notice($notice-color);
+  position: relative;
+  padding-top: 2.5em;
+  margin-top: 3em !important;
+  overflow: hidden;
+  
+  &::before {
+    content: $type;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.25em 0.75em;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+    background-color: $notice-color;
+    border-bottom-right-radius: $border-radius;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  h4 {
+    margin-top: 0.0em !important;
+  }
+}
+
+
 /* Default notice */
 
 .notice {
@@ -106,4 +140,14 @@
 
 .notice--danger {
   @include notice($danger-color);
+}
+
+/* Theorem / Axiom notice */
+
+.theorem {
+  @include theorem-box("Theorem", $theorem-color);
+}
+
+.axiom {
+  @include theorem-box("Axiom", $axiom-color);
 }

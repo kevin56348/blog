@@ -12,7 +12,11 @@ nscscc:
     url: /nscscc
   - title: "单周期处理器"
     url: /notdone
+  - title: "内存、SRAM与类SRAM接口"
+    url: /notdone
   - title: "五级流水线处理器"
+    url: /notdone
+  - title: "AXI接口"
     url: /notdone
   - title: "高速缓存"
     url: /notdone
