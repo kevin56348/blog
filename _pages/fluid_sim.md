@@ -6,17 +6,11 @@ last_modified_at: 2025.8.24
 toc: true
 toc_sticky: true
 classes: single
-# header:
-#   image: /assets/images/20240818_龙芯杯_26.jpg
-#   caption: "NSCSCC24. **2024年8月，重庆**"
 categories:
   - doc
 tags:
   - cg
   - physics
-# sidebar:
-#   title: "Table of Contents"
-#   nav: 
 ---
 
 > 本文部分内容为 [Physics-Based Simulation & Animation of Fluids](https://unusualinsights.github.io/fluid_tutorial) （by Chand T. John, Ph.D）的中文翻译。本文所涉及的所有代码以 [该 License](/blog/assets/LICENSES/LICENSE_FLUID_SIM.txt) 发布。  
@@ -158,15 +152,11 @@ $$
 
 $$
 \begin{align}
-m_1 \left(\mathbf{v}_1-\mathbf{v}_1^\prime\right) - m_2 \left(\mathbf{v}_2^\prime-\mathbf{v}_2\right) = 0 \\
 m_1 \left(\mathbf{v}_1-\mathbf{v}_2^\prime + \begin{pmatrix}
 v_{2n} - v_{1n} \\
 v_{1t} - v_{2t} \\
 \end{pmatrix}\right) - m_2 \left(\mathbf{v}_2^\prime-\mathbf{v}_2\right) = 0 \\
-m_1 \left(\mathbf{v}_1-\mathbf{v}_2^\prime + \begin{pmatrix}
-v_{2n} - v_{1n} \\
-v_{1t} - v_{2t} \\
-\end{pmatrix}\right) - m_2 \left(\mathbf{v}_2^\prime-\mathbf{v}_2\right) = 0 \\
+
 m_1 \left(\mathbf{v}_1-\mathbf{v}_2^\prime +\begin{pmatrix}
 \langle\mathbf{v}_2 - \mathbf{v}_1, \mathbf{un}_n \rangle \\
 \langle\mathbf{v}_2 - \mathbf{v}_1, -\mathbf{un}_t \rangle \\
@@ -198,11 +188,7 @@ $$
 \langle\mathbf{v}_2 - \mathbf{v}_1, \mathbf{un}_n \rangle \\
 \langle\mathbf{v}_2 - \mathbf{v}_1, -\mathbf{un}_t \rangle \\
 \end{pmatrix}\right)\\
-&= \mathbf{v}_2 - \frac{m_1}{m_1+m_2}\begin{pmatrix}
-\langle\mathbf{v}_2 - \mathbf{v}_1, 2\mathbf{un}_n \rangle\\
-0 \\
-\end{pmatrix}\\
-&= \mathbf{v}_2 - \frac{2m_1}{m_1+m_2}\langle\mathbf{v}_2-\mathbf{v}_1, \mathbf{un}_n\rangle\frac{\mathbf{n}_n}{\left\|\mathbf{n}_n\right\|}\\
+
 &= \mathbf{v}_2 - \frac{2m_1}{m_1+m_2}\langle\mathbf{v}_2-\mathbf{v}_1, \mathbf{n}_n\rangle\frac{\mathbf{n}_n}{\left\|\mathbf{n}_n\right\|^2}\\
 &= \mathbf{v}_2 - \frac{2m_1}{m_1+m_2}\frac{\langle\mathbf{v}_2-\mathbf{v}_1, \mathbf{x}_2-\mathbf{x}_1\rangle}{\left\|\mathbf{x}_2-\mathbf{x}_1\right\|^2}(\mathbf{x}_2-\mathbf{x}_1)\\
 \end{align}
