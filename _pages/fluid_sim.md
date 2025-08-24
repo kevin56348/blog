@@ -304,16 +304,18 @@ $$
 
 $$
 \begin{align}
-\Delta \mathbf{v} &= \mathbf{v}(t+\Delta t) - \mathbf{v}(t) \\
-&= (\mathbf{a}(t+\Delta t)-\mathbf{a}(t))\Delta t \\
-&= \Delta \mathbf{a} \Delta t \\
+\mathbf{v}(t+\Delta t) &= \mathbf{v}(t) + \Delta \mathbf{v} \\
+&= \mathbf{v}(t) + \mathbf{a}(t)\Delta t \\
 \end{align}
 $$
 
 则有
 
 $$
-\Delta \mathbf{x} =\mathbf{x}(t+\Delta t) - \mathbf{x}(t) = \Delta\mathbf{v}\Delta t
+\begin{align}
+\mathbf{x}(t+\Delta t) &= \mathbf{x}(t) + \Delta \mathbf{x} \\
+&= \mathbf{x}(t) + \mathbf{v}(t)\Delta t \\
+\end{align}
 $$
 
-即可更新小球的位置 $$\mathbf{x}$$
+即可更新小球的位置 $$\mathbf{x}$$.
