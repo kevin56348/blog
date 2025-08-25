@@ -22,6 +22,11 @@ tags:
 
 ## 基于粒子的流体模拟方法
 
+<figure>
+<img src="{{ '/assets/images/fluidsim/fluidsim_fig1.jpg' | relative_url }}" alt="two-dimensional elastic collision illustration"/>
+<figcaption> Two-dimensional elastic collision illustration. (a) collision of two balls. (b) before colliding. (c) after colliding. </figcaption>
+</figure>
+
 ### 二维完全弹性斜碰的末速度
 
 假设我们具有一定的数理基础，了解一些经典物理学的基本原理：
