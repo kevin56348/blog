@@ -1,7 +1,11 @@
 # main links
 main:
   - title: "Home"
-    url: /home
+    url: /
+  - title: "Tags"
+    url: /tags
+  - title: "Categories"
+    url: /categories
   - title: "About Me"
     url: /about
   - title: "Friends"

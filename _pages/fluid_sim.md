@@ -7,10 +7,10 @@ toc: true
 toc_sticky: true
 classes: single
 categories:
-  - doc
+  - Doc
 tags:
-  - cg
-  - physics
+  - CG
+  - Physics
 ---
 
 > 本文部分内容为 [Physics-Based Simulation & Animation of Fluids](https://unusualinsights.github.io/fluid_tutorial) （by Chand T. John, Ph.D）的中文翻译。本文所涉及的所有代码以 [该 License](/blog/assets/LICENSES/LICENSE_FLUID_SIM.txt) 发布。  

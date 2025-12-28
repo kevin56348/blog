@@ -11,9 +11,9 @@ header:
   image: /assets/images/20240818_龙芯杯_26.jpg
   caption: "NSCSCC24. **2024年8月，重庆**"
 categories:
-  - doc
+  - Doc
 tags:
-  - cpu
+  - CPU
 sidebar:
   title: "NSCSCC related"
   nav: nscscc

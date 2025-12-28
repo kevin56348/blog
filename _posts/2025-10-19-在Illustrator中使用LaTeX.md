@@ -1,10 +1,10 @@
 ---
 title: "在Illustrator中使用LaTeX"
-layout: posts
+layout: single
 # permalink: 
 last_modified_at: 2025.10.19
 categories:
-  - doc
+  - Doc
 tags:
   - Illustrator
   - LaTeX

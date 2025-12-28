@@ -18,6 +18,7 @@ en: &DEFAULT_EN
   ext_link_label             : "Direct link"
   less_than                  : "less than"
   minute_read                : "minute read"
+  word_count                 : "words"
   share_on_label             : "Share on"
   meta_label                 :
   tags_label                 : "Tags:"
@@ -392,6 +393,7 @@ zh: &DEFAULT_ZH_HANS
   ext_link_label             : "直接链接"
   less_than                  : "少于"
   minute_read                : "分钟阅读"
+  word_count                 : "字"
   share_on_label             : "分享"
   meta_label                 :
   tags_label                 : "标签:"
