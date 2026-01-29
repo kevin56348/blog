@@ -393,7 +393,7 @@ zh: &DEFAULT_ZH_HANS
   ext_link_label             : "直接链接"
   less_than                  : "少于"
   minute_read                : "分钟阅读"
-  word_count                 : "字"
+  word_count                 : "words"
   share_on_label             : "分享"
   meta_label                 :
   tags_label                 : "标签:"
@@ -402,7 +402,7 @@ zh: &DEFAULT_ZH_HANS
   comments_label             : "留下评论"
   comments_title             : "评论"
   more_label                 : "了解更多"
-  related_label              : "猜您还喜欢"
+  related_label              : "相关阅读"
   follow_label               : "关注:"
   feed_label                 : "Feed"
   powered_by                 : "技术来自于"

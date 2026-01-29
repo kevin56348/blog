@@ -113,7 +113,7 @@ analytics:
 author:
   name: "Kevin Wong"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Je veux des clartés pleines de rayonnements"
+  bio: "Je veux des clartés pleines de rayonnements <br> - 我要那芒熛四射的光明"
   location: "Beijing"
   email:
   links:
@@ -309,5 +309,5 @@ defaults:
       author_profile: true
       read_time: true
       comments: # true
-      share: true
+      share: false
       related: true
