@@ -1,3 +1,4 @@
+@import "CSS:../../assets/css/fontssc.css";
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
@@ -105,19 +106,12 @@ abbr[data-original-title] {
 }
 
 /* blockquotes */
-@font-face {
-    font-family: 'TimesIta';
-    src: local('Times New Roman Italic');
-    font-style: italic;
-    font-display: swap;
-    unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
-    }
 
 blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
-  font-family: "TimesIta", "KaiTi", "STKaiTi", serif;
+  font-family: "TimesIta", "KaiTiX", serif;
 //   font-style: italic;
 //   font-style: normal;
   border-left: 0.1em solid $primary-color;

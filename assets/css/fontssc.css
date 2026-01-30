@@ -15,3 +15,19 @@
       font-style: normal;
       font-display: swap;
     }
+
+@font-face {
+      font-family: 'KaiTiX';
+      src: local('KaiTi'), local("STKaiTi"),
+        url('fonts/SIMKAI.TTF') format('truetype');
+      font-style: normal;
+      font-display: swap;
+    }
+
+@font-face {
+    font-family: 'TimesIta';
+    src: local('Times New Roman Italic');
+    font-style: italic;
+    font-display: swap;
+    unicode-range: U+00-52F, U+1E00-1FFF, U+2200-22FF;
+    }
