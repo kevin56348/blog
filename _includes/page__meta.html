@@ -49,8 +49,8 @@
           {% if words < 1000 %}
             {{ words }}
           {% else %}
-            {% assign words = words | divided_by: 1000.0 | round: 1 %}
-            {{ words }}k
+            {% assign words_in_kilo = words | divided_by: 1000.0 | round: 1 %}
+            {{ words_in_kilo }}k
           {% endif %}
           {{ site.data.ui-text[site.locale].word_count | default: "words" }}
         </a>
