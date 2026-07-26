@@ -18,6 +18,7 @@ last_modified_at: 2025.12.28
 [Freidemn](https://fridemn.best/) - Never turn back — the path behind is gone.  
 [Qodicat](https://qodicat.top/)  
 [Reina](https://cnblogs.com/si--nian) - 完美潇洒的庭师  
+[Ryan](https://ryanle1017.github.io/) - Ryan's Odyssey
 [SixdayC](https://www.sixdayc.top/) - 意识到会不说再见地离别，才学会珍惜生命的每一天。  
 [SoloMaple](https://solomaple.github.io/) - 我往哪儿去  
 [Soulter](https://soulter.top/) - The world is your canvas!  
