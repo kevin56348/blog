@@ -111,9 +111,13 @@ analytics:
 
 # Site Author
 author:
-  name: "Kevin Wong"
+  name: "Kevin"
   avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "Je veux des clartés pleines de rayonnements <br> - 我要那芒熛四射的光明"
+  # bio: "Je veux des clartés pleines de rayonnements <br> - 我要那芒熛四射的光明"
+  bios:
+    - "我要那芒熛四射的光明"
+    - "我们从那儿走出去，重新见到了群星"
+    - "我们不是没有经历过痛苦的，我们忍受过比这更大的痛苦"
   location: "Beijing"
   email:
   links:
